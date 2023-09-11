@@ -1,5 +1,5 @@
 import { Container, Form, Background } from "./styles";
-import { FiUser, FiMail, FiLock } from 'react-icons/fi'
+import { FiUser, FiMail, FiLock, FiArrowLeft } from 'react-icons/fi'
 import { Link } from 'react-router-dom'
 
 import { Input } from "../../components/Input"
@@ -11,8 +11,8 @@ export function SignUp() {
             <Background />
 
             <Form>
-                <h1>Rocket Notes</h1>
-                <p>Aplicação para salvar e gerenciar seus links úteis.</p>
+                <h1>RocketMovies</h1>
+                <p>Aplicação para acompanhar tudo que assistir.</p>
 
                 <h2>Crie sua conta</h2>
                 
@@ -37,7 +37,7 @@ export function SignUp() {
                 <Button title="Cadastrar" />
 
                 <Link to="/">
-                    Voltar para o login
+                   <FiArrowLeft /> Voltar para o login
                 </Link>
             </Form>
         </Container>

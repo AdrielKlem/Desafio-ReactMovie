@@ -14,16 +14,15 @@ export const Form = styled.form`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-
     text-align: center;
 
     > h1 {
         font-size: 48px;
-        color: ${({ theme }) => theme.COLORS.ORANGE}
+        color: ${({ theme }) => theme.COLORS.PINK}
     }
 
     > h2 {
+        text-align: left;
         font-size: 24px;
         margin: 48px 0;
     }
@@ -34,8 +33,17 @@ export const Form = styled.form`
     }
 
     > a {
-        margin-top: 124px;
-        color: ${({ theme }) => theme.COLORS.ORANGE}  
+        margin-top: 48px;
+        color: ${({ theme }) => theme.COLORS.PINK};
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+
+        > svg {
+            font-size: 32px;
+        }
     }
 `
 

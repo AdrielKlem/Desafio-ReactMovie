@@ -1,5 +1,5 @@
 import { FiPlus, FiSearch } from 'react-icons/fi'
-import { Container, Brand, Menu, Search, Content, NewNote } from "./styles";
+import { Container, Subheader, Content, Title, NewNote } from "./styles";
 
 import { Note } from '../../components/Note';
 import { Input } from "../../components/Input"
@@ -12,10 +12,15 @@ export function Home() {
         <Container>
             <Header />
 
-            <NewNote to="/new">
-                <FiPlus />
-                    Adicionar Filme
-            </NewNote>
+            <Subheader>
+                <Title>
+                    Meus Filmes
+                </Title>
+                <NewNote to="/new">
+                    <FiPlus />
+                        Adicionar Filme
+                </NewNote>
+            </Subheader>
 
 
             <Content>

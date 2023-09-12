@@ -6,43 +6,48 @@ export const Container = styled.div`
     height: 100vh;
 
     display: grid;
-    grid-template-columns: 250px auto;
     grid-template-rows: 105px 128px auto 64px;
     grid-template-areas: 
     "header"
-    "menu search"
-    "menu content"
+    "subheader"
     "content";
 
     background-color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
 `
-/*export const Brand = styled.div`
-    grid-area: brand;
+
+export const Subheader = styled.div`
+    grid-area: subheader;
 
     display: flex;
-    justify-content: center;
     align-items: center;
-
-    border-bottom: 1px solid ${({ theme }) => theme.COLORS.BACKGROUND_700};
-
-    background-color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
-
-    > h1 {
-        font-size: 24px;
-        color: ${({ theme }) => theme.COLORS.ORANGE};
-    }
-`*/
+    justify-content: space-between;
+    padding: 0 124px;
+`
 
 export const Content = styled.div`
     grid-area: content;
-    padding: 0 64px;
-    overflow-y: auto;
-`
-export const NewNote = styled(Link)`
-    grid-area: newnote;
 
-    background-color: ${({ theme }) => theme.COLORS.ORANGE};
+`
+
+export const Title = styled.h2`
+    color: ${({ theme }) => theme.COLORS.WHITE};
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+`
+
+export const NewNote = styled(Link)`
+    border-radius: 8px;
+    padding: 16px;
+
+    background-color: ${({ theme }) => theme.COLORS.PINK};
     color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 
     display: flex;
     align-items: center;

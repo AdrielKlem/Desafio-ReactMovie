@@ -26,7 +26,6 @@ export const Subheader = styled.div`
 
 export const Content = styled.div`
     grid-area: content;
-
 `
 
 export const Title = styled.h2`

@@ -22,9 +22,16 @@ export function Home() {
                 </NewNote>
             </Subheader>
 
-
             <Content>
-                <Section title="Minhas notas">
+                <Section>
+                    <Note data={{ 
+                        title: `React`, 
+                        tags: [
+                            { id: '1', name: 'react'},
+                            { id: '2', name: 'rocketseat'}
+                        ]
+                    }}
+                        />
                     <Note data={{ 
                         title: `React`, 
                         tags: [

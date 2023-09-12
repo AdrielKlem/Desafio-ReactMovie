@@ -9,6 +9,7 @@ export default {
     WHITE: "#F4EDE8",
     ORANGE: "#FF9000",
     PINK: "#FF859B",
+    PINK_500: "rgba(255, 133, 155, 0.05)",
 
     GRAY_100: "#CAC4CF",
     GRAY_300: "#948F99",

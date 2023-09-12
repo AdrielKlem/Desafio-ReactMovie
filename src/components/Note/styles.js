@@ -2,12 +2,11 @@ import styled from "styled-components";
 
 export const Container = styled.button`
     width: 100%;
-    background-color: ${({ theme }) => theme.COLORS.BACKGROUND_700};
+    background-color: ${({ theme }) => theme.COLORS.PINK_500};
 
     border: none;
     border-radius: 10px;
-
-    padding: 22px;
+    padding: 32px;
     margin-bottom: 16px;
 
     > h1 {
@@ -16,6 +15,19 @@ export const Container = styled.button`
         font-weight: 700;
         font-size: 24px;
         color: ${({ theme }) => theme.COLORS.WHITE};
+        margin-bottom: 32px;
+    }
+
+    > p {
+        height: 64px;
+
+        overflow: hidden;
+        color:  ${({ theme }) => theme.COLORS.GRAY_300};
+        text-overflow: ellipsis; 
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        text-align: justify;
     }
 
     > footer {

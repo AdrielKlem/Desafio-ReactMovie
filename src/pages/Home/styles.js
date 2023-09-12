@@ -9,14 +9,14 @@ export const Container = styled.div`
     grid-template-columns: 250px auto;
     grid-template-rows: 105px 128px auto 64px;
     grid-template-areas: 
-    "brand header"
+    "header"
     "menu search"
     "menu content"
-    "newnote content";
+    "content";
 
     background-color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
 `
-export const Brand = styled.div`
+/*export const Brand = styled.div`
     grid-area: brand;
 
     display: flex;
@@ -31,22 +31,8 @@ export const Brand = styled.div`
         font-size: 24px;
         color: ${({ theme }) => theme.COLORS.ORANGE};
     }
-`
-export const Menu = styled.ul`
-    grid-area: menu;
-    background-color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
+`*/
 
-    padding-top: 64px;
-    text-align: center;
-
-    > li {
-        margin-bottom: 24px;
-    }
-`
-export const Search = styled.div`
-    grid-area: search;
-    padding: 64px 64px 0;
-`
 export const Content = styled.div`
     grid-area: content;
     padding: 0 64px;

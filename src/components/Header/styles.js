@@ -5,30 +5,34 @@ export const Container = styled.header`
     grid-area: header;
     height: 105px;
     width: 100%;
-
-    border-bottom: 1px solid ${({ theme }) => theme.COLORS.BACKGROUND_700};
+    
+    border-bottom: 1px solid ${({ theme }) => theme.COLORS.BACKGROUND_500};
 
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    gap: 64px;
     
-    padding: 0 80px;
+    padding: 0 124px;
 `
 
 export const Profile = styled(Link)`
     display: flex;
     align-items: center;
+    gap: 8px;
 
     > img {
-        width: 56px;
-        height: 56px;
+        width: 64px;
+        height: 64px;
         border-radius: 50%;
     }
 
     > div {
-        display: flex;
-        flex-direction: column;
-        margin-left: 16px;
+       display: flex;
+        flex-direction: row-reverse;
         line-height: 24px;
+        width: 100px;
+        flex-wrap: wrap;
 
         span {
             font-size: 14px;
@@ -36,18 +40,12 @@ export const Profile = styled(Link)`
         }
 
         strong {
-            font-size: 18px;
+            font-size: 14px;
             color: ${({ theme }) => theme.COLORS.WHITE};
         }
     }
 `
 
-export const Logout = styled.button`
-    border: none;
-    background: none;
-
-    > svg {
-        color: ${({ theme }) => theme.COLORS.GRAY_100};
-        font-size: 36px;
-    }
+export const Brand = styled.div`
+    color: ${({ theme }) => theme.COLORS.PINK};
 `

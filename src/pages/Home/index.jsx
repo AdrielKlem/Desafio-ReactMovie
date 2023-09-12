@@ -10,27 +10,13 @@ import  { ButtonText } from "../../components/ButtonText"
 export function Home() {
     return (
         <Container>
-            <Brand>
-            <h1>Rocketnotes</h1>
-            </Brand>
-
             <Header />
 
-            <Menu>
-                <li>
-                    <ButtonText title="Todos" isactive />
-                </li>
-                <li>
-                    <ButtonText title="React" />
-                </li>
-                <li>
-                    <ButtonText title="NodeJs" />
-                </li>
-            </Menu>
+            <NewNote to="/new">
+                <FiPlus />
+                    Adicionar Filme
+            </NewNote>
 
-            <Search>
-                <Input icon={FiSearch} placeholder="Pesquisar pelo Título"/>
-            </Search>
 
             <Content>
                 <Section title="Minhas notas">
@@ -44,11 +30,6 @@ export function Home() {
                         />
                 </Section>
             </Content>
-
-            <NewNote to="/new">
-                <FiPlus />
-                    Criar Notas
-            </NewNote>
         </Container>
     )
 }

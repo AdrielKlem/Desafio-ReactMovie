@@ -7,7 +7,7 @@ export const Container = styled.div`
     > svg {
         fill: ${({ theme}) => theme.COLORS.PINK};
 
-        width: 50px;
-        height: 50px;
+        width: 25px;
+        height: 25px;
     }
 `

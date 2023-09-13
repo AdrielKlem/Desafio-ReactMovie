@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
 export const Container = styled.button`
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
     width: 100%;
     background-color: ${({ theme }) => theme.COLORS.PINK_500};
 
@@ -15,7 +19,6 @@ export const Container = styled.button`
         font-weight: 700;
         font-size: 24px;
         color: ${({ theme }) => theme.COLORS.WHITE};
-        margin-bottom: 32px;
     }
 
     > p {
@@ -33,6 +36,5 @@ export const Container = styled.button`
     > footer {
         width: 100%;
         display: flex;
-        margin-top: 24px;
     }
 `

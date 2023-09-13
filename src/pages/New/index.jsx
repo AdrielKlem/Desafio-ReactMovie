@@ -6,6 +6,7 @@ import { Section } from "../../components/Section"
 import { Button } from "../../components/Button"
 import { Link } from 'react-router-dom'
 
+import { BsArrowLeftShort } from 'react-icons/bs'
 import { Container, Form } from "./styles";
 
 export function New() {
@@ -16,7 +17,7 @@ export function New() {
             <main>
                 <Form>
                     <header>
-                        <Link to="/">Voltar</Link>
+                        <Link to="/"><BsArrowLeftShort /> Voltar</Link>
                         <h1>Novo Filme</h1>
                     </header>
 

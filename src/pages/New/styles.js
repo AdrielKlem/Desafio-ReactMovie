@@ -37,8 +37,12 @@ export const Form = styled.form`
         margin-bottom: 36px;
 
         > a {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+
             font-size: 20px;
-            color: ${({ theme }) => theme.COLORS.GRAY_100};
+            color: ${({ theme }) => theme.COLORS.PINK};
         }
     }
 `

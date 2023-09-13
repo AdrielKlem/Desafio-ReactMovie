@@ -1,4 +1,4 @@
-import { FiPlus } from 'react-icons/fi'
+import { FiPlus } from "react-icons/fi"
 import { Container, Subheader, Content, Title, NewNote } from "./styles";
 
 import { Note } from '../../components/Note';

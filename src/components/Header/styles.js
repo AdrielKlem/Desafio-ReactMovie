@@ -6,6 +6,7 @@ export const Container = styled.header`
     height: 105px;
     width: 100%;
     
+    background-color: ${({ theme }) => theme.COLORS.BACKGROUND_500};
     border-bottom: 1px solid ${({ theme }) => theme.COLORS.BACKGROUND_500};
 
     display: flex;
@@ -14,6 +15,11 @@ export const Container = styled.header`
     gap: 64px;
     
     padding: 0 124px;
+
+    /* position: fixed;
+    top: 0;
+    flex: 1;
+    z-index: 1; */
 `
 
 export const Profile = styled(Link)`

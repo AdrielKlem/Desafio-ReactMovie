@@ -24,7 +24,7 @@ export function Home() {
             </Subheader>
 
             <Content>
-                <Section>
+                <Section style={{ overflowY: 'auto'}}>
                     <Note data={{ 
                         title: `Interestellar`,
                         numberstar: 5, 

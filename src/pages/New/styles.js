@@ -18,21 +18,27 @@ export const Container = styled.div`
 
     .tags {
         display: flex;
-        justify-content: space-between;
+        align-items: center;
+        justify-content: left;
         flex-wrap: wrap;
+        gap: 8px;
+        background-color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
+
+        border-radius: 8px;
+        padding: 16px;
     }
 `
 
 export const Form = styled.form`
-   margin: 38px auto;
-    padding: 0 64px;
-
+    margin: 38px auto;
+    
     > header {
         display: flex;
         align-items: left;
         justify-content: space-between;
         flex-direction: column;
         gap: 16px;
+        padding: 0 124px;
         
         margin-bottom: 36px;
 

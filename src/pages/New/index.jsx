@@ -21,20 +21,17 @@ export function New() {
                         <h1>Novo Filme</h1>
                     </header>
 
-                    <InputArea>
-                        <Input placeholder="Título" id="title" />
-                        <Input placeholder="Sua nota (de 0 a 5)" id="numberstar" />
-                        <Textarea placeholder="Observações" id="textarea"/>
-                    </InputArea>
-
-                    <Section title="Link úteis">
-                        <NoteItem value="https://rockseat.com.br" />
-                        <NoteItem isnew placeholder="Novo Link"/>
+                    <Section title="Informações">
+                        <InputArea>
+                            <Input placeholder="Título" id="title" />
+                            <Input placeholder="Sua nota (de 0 a 5)" id="numberstar" />
+                            <Textarea placeholder="Observações" id="textarea"/>
+                        </InputArea>
                     </Section>
                     <Section title="Marcadores">
                         <div className="tags">
                             <NoteItem value="react" />
-                            <NoteItem isnew placeholder="Novo Tag"/>
+                            <NoteItem isnew />
                         </div>
                     </Section>
 

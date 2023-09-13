@@ -3,12 +3,13 @@ import { Container } from "./styles"
 
 export function NoteItem({ isnew, value, onClick, ...rest }) {
     return (
-        <Container $isnew={isnew}>
+        <Container isnew={isnew}>
             <input 
             type="text" 
             value={value}
             readOnly={!isnew}
             {...rest}
+            placeholder={isnew ? "Novo marcador" : ""}
             />
             <button 
                 type="button"

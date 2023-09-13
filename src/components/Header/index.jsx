@@ -9,9 +9,9 @@ export function Header() {
             <Input placeholder="Pesquisar pelo título" 
                 icon={FiSearch}
             />
-            <Profile >
+            <Profile to="/profile">
                 <div>
-                    <strong to="/profile">Adriel Klem</strong>
+                    <strong>Adriel Klem</strong>
                     <span>Sair</span>
                 </div>
                 <img src="https://github.com/AdrielKlem.png" alt="Foto do usuário" />

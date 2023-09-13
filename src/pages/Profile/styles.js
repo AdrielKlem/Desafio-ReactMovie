@@ -7,7 +7,7 @@ export const Container = styled.div`
         width: 100%;
         height: 144px;
 
-        background: ${({ theme }) => theme.COLORS.BACKGROUND_900};
+        background: ${({ theme }) => theme.COLORS.PINK_500};
 
         display: flex;
 
@@ -15,9 +15,13 @@ export const Container = styled.div`
 
         padding: 0 124px;
 
-        svg {
-            color: ${({ theme }) => theme.COLORS.GRAY_100};
-            font-size: 24px;
+        > a {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+
+            font-size: 20px;
+            color: ${({ theme }) => theme.COLORS.PINK};
         }
     }    
 `

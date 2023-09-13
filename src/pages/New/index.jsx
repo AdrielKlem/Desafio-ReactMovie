@@ -35,7 +35,10 @@ export function New() {
                         </div>
                     </Section>
 
-                    <Button title="Salvar" />
+                    <div className="buttons">
+                        <Button title="Excluir filme" />
+                        <Button title="Salvar alterações" />
+                    </div>
                 </Form>
             </main>
         </Container>

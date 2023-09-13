@@ -51,6 +51,19 @@ export const Form = styled.form`
             color: ${({ theme }) => theme.COLORS.PINK};
         }
     }
+
+    > .buttons {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        gap: 64px;
+        padding: 0 124px;
+
+        > :first-child {
+            background-color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
+            color: ${({ theme }) => theme.COLORS.PINK};
+        }
+    }
 `
 
 export const InputArea = styled.div`

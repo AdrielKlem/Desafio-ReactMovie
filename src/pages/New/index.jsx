@@ -7,7 +7,7 @@ import { Button } from "../../components/Button"
 import { Link } from 'react-router-dom'
 
 import { BsArrowLeftShort } from 'react-icons/bs'
-import { Container, Form } from "./styles";
+import { Container, Form, InputArea } from "./styles";
 
 export function New() {
     return(
@@ -21,8 +21,11 @@ export function New() {
                         <h1>Novo Filme</h1>
                     </header>
 
-                    <Input placeholder="Título" />
-                    <Textarea placeholder="Observações" />
+                    <InputArea>
+                        <Input placeholder="Título" id="title" />
+                        <Input placeholder="Sua nota (de 0 a 5)" id="numberstar" />
+                        <Textarea placeholder="Observações" id="textarea"/>
+                    </InputArea>
 
                     <Section title="Link úteis">
                         <NoteItem value="https://rockseat.com.br" />

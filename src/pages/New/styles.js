@@ -24,7 +24,7 @@ export const Container = styled.div`
 `
 
 export const Form = styled.form`
-    margin: 38px auto;
+   margin: 38px auto;
     padding: 0 64px;
 
     > header {
@@ -44,5 +44,27 @@ export const Form = styled.form`
             font-size: 20px;
             color: ${({ theme }) => theme.COLORS.PINK};
         }
+    }
+`
+
+export const InputArea = styled.div`
+    display: grid;
+    grid-template-areas:
+    "title note"
+    "textarea textarea";
+
+    gap: 16px;
+
+
+    > #title {
+        grid-area: title;
+    }
+
+    > #numberstar {
+        grid-area: note;
+    }
+
+    > #textarea {
+        grid-area: textarea;
     }
 `

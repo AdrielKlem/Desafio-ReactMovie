@@ -1,4 +1,4 @@
-import { FiSearch } from 'react-icons/Fi'
+import { FiSearch } from 'react-icons/fi'
 import { Container, Profile, Brand } from "./styles";
 import { Input } from '../Input';
 

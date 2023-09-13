@@ -16,8 +16,8 @@ export function New() {
             <main>
                 <Form>
                     <header>
-                        <h1>Criar nota</h1>
                         <Link to="/">Voltar</Link>
+                        <h1>Novo Filme</h1>
                     </header>
 
                     <Input placeholder="Título" />

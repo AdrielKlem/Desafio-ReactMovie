@@ -24,15 +24,16 @@ export const Container = styled.div`
 `
 
 export const Form = styled.form`
-    max-width: 550px;
     margin: 38px auto;
+    padding: 0 64px;
 
     > header {
         display: flex;
-        align-items: center;
+        align-items: left;
         justify-content: space-between;
+        flex-direction: column;
+        gap: 16px;
         
-
         margin-bottom: 36px;
 
         > a {

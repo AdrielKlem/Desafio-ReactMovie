@@ -17,6 +17,8 @@ export const Container = styled.body`
 
         padding: 64px 0;
     }
+
+    
 `
 
 export const Links = styled.ul`
@@ -32,25 +34,83 @@ export const Links = styled.ul`
 `
 
 export const Content = styled.div`
-    max-width: 550px;
     margin: 0 auto;
 
     display: flex;
     flex-direction: column;
+    align-items: left;
 
-    > button:first-child {
-        align-self: end;
+
+    > header {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 16px;
+        padding: 0 124px;
+
+        > a {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+
+            font-size: 20px;
+            color: ${({ theme }) => theme.COLORS.PINK};
+        }
     }
 
-    > h1 {
+    p {
+        font-size: 16px;
+        text-align: justify;
+    }
+`
+
+export const Profile = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 24px; 
+    color: ${({ theme }) => theme.COLORS.WHITE};
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+        
+    img {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        border: 1px solid ${({ theme }) => theme.COLORS.BACKGROUND_500};
+        background: lightgray 50% / cover no-repeat;
+        }
+
+    h1 {
         font-size: 36px;
         font-weight: 500;
-        padding-top: 64px;
     }
 
-    > p {
-        font-size: 16px;
-        margin-top: 16px;
-        text-align: justify;
+    .title {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+
+        svg {
+            width: 35px;
+            height: 35px;
+        }
+    }
+
+    .status {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        svg {
+            color: ${({ theme }) => theme.COLORS.PINK};
+        }
+    }
+
+    .tags {
+        span {
+            background-color: ${({ theme }) => theme.COLORS.PINK_500};
+        }
     }
 `
